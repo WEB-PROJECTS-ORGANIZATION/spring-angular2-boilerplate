@@ -2,7 +2,7 @@
 name: Frontend issue template
 about: Template for frontend issues
 title: "[FRONTEND]"
-labels: frontend
+labels: frontend-client
 assignees: DusanStevic
 
 ---

@@ -2,7 +2,7 @@
 name: Backend issue template
 about: Template for backend issues
 title: "[BACKEND]"
-labels: backend
+labels: backend-server
 assignees: DusanStevic
 
 ---
