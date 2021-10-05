@@ -8,3 +8,6 @@ INSERT INTO users (user_type, id, username, password, first_name, last_name, ema
 INSERT INTO users (user_type, id, username, password, first_name, last_name, email, enabled, last_password_reset_date, profile_image_path) VALUES ( 'administrator', 2, 'admin', '$2a$10$uNLXN/B2UmLGB3NrAhMgwO62NPYWltLsk2UzVFpZPvZ5SOxuTIF9a','Admin_first', 'Admin_last', 'admin@gmail.com', true, '2019-04-18 20:58:00', 'https://res.cloudinary.com/djxkexzcr/image/upload/v1574108111/zbvvptxlxzzhzomjvp2s.jpg');
 INSERT INTO users (user_type, id, username, password, first_name, last_name, email, enabled, last_password_reset_date, profile_image_path) VALUES ( 'sys', 3, 'sys', '$2a$10$uNLXN/B2UmLGB3NrAhMgwO62NPYWltLsk2UzVFpZPvZ5SOxuTIF9a','Sys_first', 'Sys_last', 'sys@gmail.com', true, '2019-04-18 20:58:00', 'https://res.cloudinary.com/djxkexzcr/image/upload/v1574108111/zbvvptxlxzzhzomjvp2s.jpg');
 
+INSERT INTO user_authority (user_id, authority_id) VALUES (1, 1); -- registered user has ROLE_REGISTERED_USER
+INSERT INTO user_authority (user_id, authority_id) VALUES (2, 2); -- adminstrator has ROLE_ADMIN
+INSERT INTO user_authority (user_id, authority_id) VALUES (3, 3); -- system adminstrator has ROLE_SYS_ADMIN
